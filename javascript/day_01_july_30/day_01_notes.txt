@@ -1,0 +1,19 @@
+Tools / Softwares
+=================
+1. NodeJS
+   https://nodejs.org/en/download
+
+   Run the below command in terminal to verify nodejs is installed
+   node -v
+
+2. vscode (code editor)
+   https://code.visualstudio.com/download
+
+3. Git Setup
+   a. install git software (https://git-scm.com/downloads)
+   b. create github Account (https://github.com/)
+   c. Have git setup in local machine
+      https://github.com/sanjaysamantra1/git_notes/blob/main/git_notes.txt
+
+
+    
