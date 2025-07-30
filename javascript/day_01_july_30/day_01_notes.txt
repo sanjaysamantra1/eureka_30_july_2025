@@ -16,4 +16,30 @@ Tools / Softwares
       https://github.com/sanjaysamantra1/git_notes/blob/main/git_notes.txt
 
 
-    
+
+Web Development
+===============
+-Developing a website
+
+1. FrontEnd : User Interface ( Look & Feel )
+        HTML : Content ( paragraphs, images, list , table , form , audio, video )
+        CSS :  Styling ( border , background , width , height , margin , padding )
+        Bootstrap : CSS Library ( Pre-defined css classes , responsiveness )
+        Javascript : Behaviour 
+        Angular/React : Javascript frameworks (RAD , CLI , Template system, Routing , Form handling )
+2. BackEnd : Develop REST Apis ( Java / .net / Python / PHP / Nodejs / Go)
+3. Database : Holds the data ( oracle , mySQL , MongoDB , Postgree)
+
+
+
+Flipkart Product Example
+========================
+1. Create an HTML file
+
+2. !  ( emmet / shortcut ) add boilerplate HTML code
+
+3. Add HTML,CSS Code
+
+4. Top Open/Run HTML file in browser
+    a. install vscode extension ( Open In Browser )
+    b. alt+b  / alt+shift+b
