@@ -1,0 +1,68 @@
+HTML Emmets / shortcuts
+=======================
+https://docs.emmet.io/cheat-sheet/
+
+
+ ! 
+
+ ol>li{Car-$}*5
+
+ select>option*10{Country-$}
+
+ table>tr*10>td*5{data-$}
+
+
+How to use CSS in HTML file
+===========================
+1. inline css (style attribute) (restricted to an element)
+    <div style='color:red'>This is a div</div>
+2. internal css (style tag) (restricted to 1 HTML file)
+   <style></style>
+3. external css
+    a. write css code in a separate .css file
+    b. include that css file in HTML file using <link>
+
+
+How to use bootstrap in HTML Files
+==================================
+-CSS Library : Pre-defined CSS classnames , reponsiveness
+-maintained by twitter
+-Bootstrap 5 is the latest version
+
+Add CDN Link to the <head></head> of HTML file
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+Types of javascript
+====================
+1. Internal Javascript <script></script>
+2. External javascript (separate .js file)
+
+
+How to write and execute Javascript code
+========================================= 
+1. Browser (FrontEnd Development)       
+   a. create a javascript file with some javascript content (abc.js)
+   b. include that javascript file into HTML file 
+      <script src='abc.js'></script>
+   c. open HTML file in browser (alt+b)
+
+2. NodeJS (backEnd Development)
+    a. create a javascript file with some javascript content (abc.js)
+    b. run the javascript file with the below command
+       node <filename>.js  (make sure nodejs is installed)
+
+Note : Every javascript code that runs on browser might not run on nodejs , and vice-versa
+
+
+
+Most Commonly used javascript objects/classes
+===============================================
+console : log() , warn() , error(), table() , dir() , time()
+window :  alert(), prompt(), confirm(), print()
+document : write(), getElementById()
+Math :   max(), min(), sqrt()
+Array :  push(), pop()
+Object : keys(), values()
