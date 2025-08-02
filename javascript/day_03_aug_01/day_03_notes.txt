@@ -1,0 +1,24 @@
+Most Commonly used javascript objects/classes
+===============================================
+console : log() , warn() , error(), table() , dir() , time(), timeEnd()
+window :  alert(), prompt(), confirm(), print()
+
+Note : window object methods can be accessed directly
+
+window.alert(`Addition of ${a} and ${b} is ${a + b}`); // valid
+alert('Helloooooooo') // valid
+
+
+
+alert() : display any alert message to user
+          Message + ok
+
+confirm() : user confirmation
+            message + ok (true) + cancel(false)
+
+prompt() : to collect user input
+            message + input box + ok,cancel
+
+
+Assignment:
+Ask user to enter 2 numbers, and display addition result
