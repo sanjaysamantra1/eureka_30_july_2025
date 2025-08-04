@@ -1,0 +1,12 @@
+<script>
+    let str = 'This is Javascript class';
+
+    console.log(str.split(' '));  // n+1 , array should have 4 words
+    console.log(str.split(''));   // ['T','h','i'];
+
+    console.log(str.split('Java'));  //  ['This is ', 'script class']
+    console.log(str.split('python'));  //  ['This is Javascript class']
+
+    console.log(str.split('This'));  //  ['','This is Javascript class']
+    console.log(str.split('class'));  //  ['This is Javascript class','']
+</script>

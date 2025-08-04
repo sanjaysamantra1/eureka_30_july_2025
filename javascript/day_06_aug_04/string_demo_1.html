@@ -1,0 +1,14 @@
+<script>
+	let str1 = 'hello';
+	let str2 = 'hello';  // primitive string
+
+	let str3 = new String('hello'); // string objects
+	let str4 = new String('hello');
+
+	console.log(typeof str1); // string
+	console.log(typeof str3); // object
+
+	console.log('str1 == str2: ', str1 == str2); // true
+	console.log('str2 == str3: ', str2 == str3); // true, str3 is typecasted
+	console.log('str3 == str4: ', str3 == str4); // false
+</script>

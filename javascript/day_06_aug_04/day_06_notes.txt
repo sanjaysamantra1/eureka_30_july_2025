@@ -1,0 +1,50 @@
+Strings
+=======
+-strings are used to represent and manipulate a sequence of characters.
+-JavaScript string is zero or more characters written inside quotes.
+     let str1 = '';
+-We can use single or double quotes for string. 
+	  var a='hello'; 
+	  var b="hello";
+-We can use quotes inside a string, as long as they don't match the quotes surrounding the string.
+	var answer1 = 'It's alright'; //in-valid
+	var answer1 = "It's alright"; //valid
+	var answer2 = "He is called 'Johnny'";  //valid
+	var answer3 = 'He is called "Johnny"'; // valid
+-Strings can be created in 2 ways
+	1. as primitives, using string literals; 
+	   var a = 'hello';
+	2. as objects, using the String() constructor
+	   var b = new String('hello');
+
+
+String methods:
+--------------
+length;
+toUpperCase();
+toLowerCase();
+charAt();
+at()
+charCodeAt();
+concat();
+indexOf();
+lastIndexOf();
+includes();
+startsWith()
+endsWith()
+match();
+matchAll()   // returns iterator
+replace();
+replaceAll();
+repeat();
+slice(start, end)
+substring(start, end)
+substr(start, length)
+split()
+search(regex)
+startsWith()
+trim()
+eval(); (eval() is from Window Object)
+localeCompare()
+
+N.p:- substring() cannot accept negative indexes. slice() does.
