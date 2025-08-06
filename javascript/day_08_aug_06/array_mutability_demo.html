@@ -1,0 +1,8 @@
+<script>
+    const arr = [1, 2, 3];
+    arr[0] = 11;
+    arr.push(4); // Mutating the array (allowed)
+    console.log(arr); // [11, 2, 3, 4]
+    // Reassigning the array (not allowed with `const`)
+    arr = [5, 6, 7]; // TypeError: Assignment to constant variable.
+</script>
