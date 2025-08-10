@@ -1,0 +1,78 @@
+Modules
+=======
+-Way to organize and structure the code into reusable pieces.
+ modularity
+ Re-usability
+
+
+Module Systems  (CJS , EJS , AMD ,UMD)
+==============
+1. CommonJS  (Nodejs)
+   module.exports = {member1,member2};
+   const member1 = require('Library/file name');
+2. ECMASCRIPT (React,angular)
+   export member1;
+   export default member2;
+   
+   
+
+Example : 
+import React, { Component } from 'react';
+
+
+
+imports & exports
+=================
+-Default import:
+  import DefaultMember from 'src/my_lib';
+-Named imports:
+  import { name1, name2 } from 'src/my_lib';
+-Combining a default import with named imports
+  import DefaultMember, { name1, name2 } from 'src/my_lib';
+
+
+Named Export vs Default Export
+==============================
+-Only one default export is allowed per file,where as multiple named exports are allowed per file.
+-Named exports are useful to export several values. 
+-A default export can be a function, a class, an object(cann't be variables). 
+ This value is to be considered as the “main” exported value since it will be the simplest to import
+-The name of imported module has to be the same as the name of the exported module for named exports.
+-The naming of import is completely independent in default export and we can use any name we like.
+ex: import MyReact, { MyComponent } from "react";
+           correct    wrong-namedExport
+
+
+
+
+Promise
+=======
+-A promise is an object that holds the future value of an asynchronous operation.
+-A Promise object represents a value that is not available now, but will be resolved/available at some point in the future.
+-Promise object can have different states:- pending, resolved/fulfilled, rejected.
+ex:-if we request some data from a server, promise promises us to get that data 
+ that we can use in the future. 
+
+
+ex: 
+// fetch() returns a promise Object
+let usersPromise= fetch('https://jsonplaceholder.typicode.com/users');
+console.log(usersPromise);
+
+How to read data from a promise
+-------------------------------
+1. then()
+2. async-await
+
+
+methods of Promise class:
+------------------------
+Promise.all(promises) – waits for all promises to resolve and returns an array of their results. If any of the given promises rejects, it becomes the error of Promise.all, and all other results are ignored.
+Promise.allSettled(promises) – when all of the given promises have either fulfilled or rejected
+	status: "fulfilled" or "rejected"
+	value (if fulfilled) or reason (if rejected).
+Promise.race(promises) – waits for the first promise to settle, and its result/error becomes the outcome.
+Promise.any(promises) – waits for the first promise to fulfill, and its result becomes the outcome. 
+				If all of the given promises are rejected, AggregateError becomes the error of Promise.any.
+Promise.resolve(value) – makes a resolved promise with the given value.
+Promise.reject(error) – makes a rejected promise with the given error.

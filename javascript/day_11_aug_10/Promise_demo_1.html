@@ -1,0 +1,30 @@
+<script>
+    function add(a, b) { // returns a value
+        return a + b;
+    }
+    let addResult = add(10, 20);
+    console.log(addResult);
+
+    let maxResult = Math.max(10, 20, 30, 40, 50);
+    console.log(maxResult);
+
+    let userPromise = fetch('ttps://jsonplaceholder.typicode.com/users');
+    console.log(userPromise);
+
+    // Data Can be read from promise using 1.then() 2.async-await
+
+
+    // 1. then(success,error)
+    userPromise.then(
+        (reponse) => {
+            console.log(reponse);
+            reponse.json().then(finalResult => {
+                console.log(finalResult)
+            })
+        },
+        (error) => {
+            console.log('something went wrong', error)
+        }
+    )
+
+</script>
